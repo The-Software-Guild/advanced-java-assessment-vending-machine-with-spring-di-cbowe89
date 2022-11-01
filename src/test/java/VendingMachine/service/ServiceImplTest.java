@@ -1,8 +1,6 @@
 package VendingMachine.service;
 
-import VendingMachine.dao.AuditDao;
 import VendingMachine.dao.PersistenceException;
-import VendingMachine.dao.VendingMachineDao;
 import VendingMachine.dto.Item;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
