@@ -1,0 +1,10 @@
+Coca-Cola::1.45::14
+Snickers Bar::0.99::12
+Pepsi::1.25::6
+Peanut Butter Crackers::2.40::-10
+Oreos::3.50::1
+Cheetos::1.99::0
+Mountain Dew::1.33::15
+RedBull::4.98::2
+Gum::0.49::10
+BBQ Chips::0.80::15
