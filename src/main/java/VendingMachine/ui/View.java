@@ -2,6 +2,8 @@ package VendingMachine.ui;
 
 import VendingMachine.dto.Coins;
 import VendingMachine.dto.Item;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -12,6 +14,7 @@ import java.util.List;
  * The {@code View} class is responsible for all information,
  * banners, etc. displayed to the user throughout the application
  */
+@Component
 public class View {
     // Declare UserIO object
     private final UserIO io;
@@ -20,6 +23,7 @@ public class View {
      * Constructor for View object
      * @param io UserIO object
      */
+    @Autowired
     public View(UserIO io) {
         this.io = io;
     }

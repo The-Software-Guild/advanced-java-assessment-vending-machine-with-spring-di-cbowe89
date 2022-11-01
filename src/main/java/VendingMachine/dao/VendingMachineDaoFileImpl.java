@@ -1,6 +1,7 @@
 package VendingMachine.dao;
 
 import VendingMachine.dto.Item;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.Map;
  * The {@code VendingMachineDaoFileImpl} class is responsible for
  * interacting with Item objects in the VendingMachine
  */
+@Component
 public class VendingMachineDaoFileImpl implements VendingMachineDao {
     // Declare variables for ITEM_FILE name, FileDao object,
     // and a map to hold the Item objects

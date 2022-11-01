@@ -11,6 +11,8 @@ import VendingMachine.service.ServiceLayerImpl;
 import VendingMachine.ui.UserIO;
 import VendingMachine.ui.UserIOConsoleImpl;
 import VendingMachine.ui.View;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -23,6 +25,7 @@ import java.util.List;
  * It controls the flow of the application, allows for navigation via
  * the menu, and provides methods to interact with the VendingMachine.
  */
+@Component
 public class Controller {
 
     // Declare VendingMachineView and VendingMachineServiceLayer objects
@@ -46,6 +49,7 @@ public class Controller {
      * @param view VendingMachineView object
      * @param serviceLayer VendingMachineService object
      */
+    @Autowired
     public Controller(View view, ServiceLayer serviceLayer) {
         // Initialize View and Service
         this.view = view;

@@ -2,6 +2,8 @@ package VendingMachine.service;
 
 import VendingMachine.dao.*;
 import VendingMachine.dto.Item;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -12,6 +14,7 @@ import java.util.stream.Collectors;
  * communicating with the VendingMachineDao and
  * AuditDao
  */
+@Component
 public class ServiceLayerImpl implements ServiceLayer {
     // Declare VendingMachineDao and AuditDao object
     private final VendingMachineDao vendingMachineDao;
@@ -32,6 +35,7 @@ public class ServiceLayerImpl implements ServiceLayer {
      * @param vendingMachineDao VendingMachineDao object
      * @param auditDao AuditDao object
      */
+    @Autowired
     public ServiceLayerImpl(VendingMachineDao vendingMachineDao, AuditDao auditDao) {
         this.vendingMachineDao = vendingMachineDao;
         this.auditDao = auditDao;

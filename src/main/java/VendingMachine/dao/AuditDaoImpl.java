@@ -1,5 +1,7 @@
 package VendingMachine.dao;
 
+import org.springframework.stereotype.Component;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,6 +11,7 @@ import java.time.LocalDateTime;
  * The {@code AuditDaoImpl} class is responsible for writing
  * information to the audit .txt file
  */
+@Component
 public class AuditDaoImpl implements AuditDao {
 
     // Declare and initialize variable for name of audit log
